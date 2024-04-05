@@ -1,0 +1,144 @@
+:root {
+  --cv-primary: #858ae3;
+  --cv-secondary: #e6e8e6;
+  --cv-secondary-variant: #9d9d9d;
+  --cv-black: #272727;
+  --cv-white: #fff;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+}
+
+h3 {
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+p {
+  color: var(--cv-secondary-variant);
+}
+
+main {
+  margin-top: 120px;
+}
+
+/* Navbar */
+
+.logo {
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: var(--cv-primary);
+  cursor: pointer;
+}
+
+.cv-color {
+  color: var(--cv-primary);
+}
+
+.navbar {
+  background-color: var(--cv-white);
+}
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+  text-transform: capitalize;
+}
+
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background-color: var(--cv-secondary);
+  height: 2px;
+  width: 0%;
+  transition: all 200ms;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+
+/* Experiencia */
+
+.jobs-container {
+  margin-left: 6rem;
+  margin-bottom: 50px;
+  border-left: 3px solid var(--cv-secondary);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.job-item {
+  position: relative;
+  margin-left: 20px;
+}
+
+.job-item:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.job-item::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 0px;
+  left: -50px;
+  border-radius: 100%;
+  background-color: var(--cv-primary);
+}
+
+/* Educacion */
+
+.education-container {
+  margin-left: 2rem;
+}
+
+.education-item {
+  gap: 20px;
+}
+
+.thumbtack-icon {
+  color: var(--cv-primary);
+  position: relative;
+  bottom: 5px;
+}
+
+.thumbtack-icon i {
+  transform: rotate(30deg);
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    padding: 0.2em 0;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    margin: 0 1em;
+  }
+}
