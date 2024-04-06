@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Manrope', sans-serif;
+  color: var(--cv-black);
 }
 
 h1 {
@@ -42,6 +43,10 @@ p {
   font-size: 18px;
   color: var(--cv-primary);
   cursor: pointer;
+}
+
+.logo:hover {
+  color: var(--cv-primary);
 }
 
 .cv-color {
@@ -228,7 +233,7 @@ span.tag {
 /* Footer */
 
 footer {
-  background-color: var(--cv-secondary);
+  background-color: var(--cv-black);
 }
 
 @media only screen and (min-width: 992px) {
