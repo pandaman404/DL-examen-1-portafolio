@@ -18,12 +18,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Mi CV</title>
+    <title>CV Rodrigo Valenzuela</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg px-2 px-lg-5 py-4">
+    <nav class="navbar navbar-expand-lg px-4 px-xl-0 py-4">
       <div class="container-xl">
-        <span class="logo">Rodrigo Valenzuela</span>
+        <a class="navbar-brand logo" href="#"> Mi CV </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -38,10 +38,10 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-black" href="#experiencia">Experiencia</a>
+              <a class="nav-link text-black" href="#sobre-mi">Sobre Mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black" href="#estudios">Estudios</a>
+              <a class="nav-link text-black" href="#experiencia">Experiencia</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-black" href="#portafolio">Portafolio</a>
@@ -50,62 +50,115 @@
         </div>
       </div>
     </nav>
-    <main class="container-xl mb-5">
-      <section class="row mb-5">
-        <div class="row mb-4">
-          <h3 id="experiencia">
+    <main class="container-xl mt-5 mb-5">
+      <section
+        id="sobre-mi"
+        class="d-flex flex-column flex-lg-row align-items-center justify-content-lg-center"
+      >
+        <img
+          src="./assets/img/foto_cv.jpg"
+          class="profile-img"
+          alt="Foto de perfil"
+        />
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <h1>Hola soy <span class="cv-color">Rodrigo_</span></h1>
+          <p>
+            Ingeniero Civil Informático con más de 3 años de experiencia en el
+            desarrollo web, enfocado principalmente al desarrollo de software
+            FrontEnd.
+          </p>
+          <div class="social-icons d-flex flex-row justify-content-center">
+            <a
+              href="https://www.linkedin.com/in/rodrigo-valenzuela-466b0021a/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://wa.me/+56988822311"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://github.com/pandaman404"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://gitlab.com/valenzuela97"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-gitlab"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section
+        class="mb-5 d-flex flex-column flex-lg-row justify-content-lg-evenly"
+        id="experiencia"
+      >
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <h3
+            class="px-4 px-sm-0 mb-4 align-self-start align-self-sm-center align-self-lg-start"
+          >
             <span class="cv-color">
               <i class="fa-solid fa-code color-cv"></i>
             </span>
             Experiencia
           </h3>
+          <div class="jobs-container">
+            <div class="job-item">
+              <h4 class="fw-bold">Fork Chile</h4>
+              <h5>Desarrollador Frontend</h5>
+              <p>(Febrero 2022 - Febrero 2024)</p>
+            </div>
+            <div class="job-item">
+              <h4 class="fw-bold">Freelance</h4>
+              <h5>Desarrollador WordPress</h5>
+              <p>(Febrero 2021 - Junio 2021)</p>
+            </div>
+            <div class="job-item">
+              <h4 class="fw-bold">Op. IT</h4>
+              <h5>Desarrollador Web Trainee</h5>
+              <p>(Agosto 2020 - Enero 2021)</p>
+            </div>
+          </div>
         </div>
-        <div class="jobs-container">
-          <div class="row job-item">
-            <h4 class="fw-bold">Fork Chile</h4>
-            <h5>Desarrollador Frontend</h5>
-            <p>(Febrero 2022 - Febrero 2024)</p>
-          </div>
-          <div class="row job-item">
-            <h4 class="fw-bold">Freelance</h4>
-            <h5>Desarrollador WordPress</h5>
-            <p>(Febrero 2021 - Junio 2021)</p>
-          </div>
-          <div class="row job-item">
-            <h4 class="fw-bold">Op. IT</h4>
-            <h5>Desarrollador Web Trainee</h5>
-            <p>(Agosto 2020 - Enero 2021)</p>
-          </div>
-        </div>
-      </section>
-      <section class="row" id="estudios">
-        <div class="row mb-5">
-          <h3>
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <h3
+            class="px-4 px-sm-0 mb-5 align-self-start align-self-sm-center align-self-lg-start"
+          >
             <span class="cv-color">
               <i class="fa-solid fa-building-columns"></i>
             </span>
             Estudios
           </h3>
-        </div>
-        <div class="education-container">
-          <div class="d-flex flex-nowrap education-item mb-4">
-            <span class="thumbtack-icon fs-4">
-              <i class="fa-solid fa-thumbtack"></i>
-            </span>
-            <div class="education-item-content">
-              <h4 class="fw-bold">Ingenieria Civil en Informatica</h4>
-              <h5>Universidad San Sebastian</h5>
-              <p>(2015 - 2020)</p>
+          <div class="education-container">
+            <div class="d-flex flex-nowrap education-item mb-4">
+              <span class="thumbtack-icon fs-4">
+                <i class="fa-solid fa-thumbtack"></i>
+              </span>
+              <div class="education-item-content">
+                <h4 class="fw-bold">Ingenieria Civil en Informatica</h4>
+                <h5>Universidad San Sebastian</h5>
+                <p>(2015 - 2020)</p>
+              </div>
             </div>
-          </div>
-          <div class="d-flex flex-nowrap education-item">
-            <span class="thumbtack-icon fs-4">
-              <i class="fa-solid fa-thumbtack"></i>
-            </span>
-            <div class="education-item-content">
-              <h4 class="fw-bold">Bootcamp Desarrollo Full Stack JS</h4>
-              <h5>Desafio Latam</h5>
-              <p>(2024)</p>
+            <div class="d-flex flex-nowrap education-item">
+              <span class="thumbtack-icon fs-4">
+                <i class="fa-solid fa-thumbtack"></i>
+              </span>
+              <div class="education-item-content">
+                <h4 class="fw-bold">Bootcamp Desarrollo Full Stack JS</h4>
+                <h5>Desafio Latam</h5>
+                <p>(2024)</p>
+              </div>
             </div>
           </div>
         </div>

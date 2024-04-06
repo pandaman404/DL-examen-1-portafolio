@@ -6,15 +6,12 @@
   --cv-white: #fff;
 }
 
-*,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body {
   font-family: 'Manrope', sans-serif;
-  font-weight: 300;
+}
+
+h1 {
+  font-weight: bold;
 }
 
 h3 {
@@ -25,20 +22,16 @@ h3 {
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 p {
   color: var(--cv-secondary-variant);
-}
-
-main {
-  margin-top: 120px;
 }
 
 /* Navbar */
@@ -64,6 +57,21 @@ main {
   text-transform: capitalize;
 }
 
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar .navbar-nav .nav-item {
+  border-bottom: 1px solid var(--cv-secondary);
+}
+
 .navbar .navbar-nav .nav-item::after {
   position: absolute;
   bottom: 0;
@@ -79,11 +87,59 @@ main {
   width: 100%;
 }
 
+/* Sobre Mi */
+
+#sobre-mi {
+  gap: 1rem;
+  padding: 0 20px;
+  margin-bottom: 7rem;
+}
+
+.profile-img {
+  width: 200px;
+  border-radius: 100%;
+  filter: grayscale(0.5);
+  border: 5px solid var(--cv-secondary);
+}
+
+#sobre-mi h1 {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+#sobre-mi p {
+  text-align: center;
+  max-width: 500px;
+}
+
+.social-icons {
+  gap: 8px;
+}
+
+.social-icons a {
+  color: var(--cv-black);
+  transition: all 0.5ms;
+}
+
+.social-icons a:hover {
+  color: var(--cv-primary);
+}
+
+.social-icons a i {
+  font-size: 20px;
+}
+
 /* Experiencia */
 
+#experiencia {
+  gap: 2rem;
+}
+
 .jobs-container {
-  margin-left: 6rem;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  padding-left: 10px;
   border-left: 3px solid var(--cv-secondary);
   padding-top: 50px;
   padding-bottom: 50px;
@@ -95,16 +151,16 @@ main {
 }
 
 .job-item:not(:last-child) {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .job-item::before {
   content: '';
   position: absolute;
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   top: 0px;
-  left: -50px;
+  left: -44px;
   border-radius: 100%;
   background-color: var(--cv-primary);
 }
@@ -112,7 +168,7 @@ main {
 /* Educacion */
 
 .education-container {
-  margin-left: 2rem;
+  padding: 0 20px;
 }
 
 .education-item {
@@ -140,5 +196,34 @@ main {
 
   .navbar .navbar-nav .nav-item {
     margin: 0 1em;
+    border: 0px;
+  }
+
+  .profile-img {
+    width: 300px;
+  }
+
+  #sobre-mi {
+    gap: 5rem;
+  }
+
+  #sobre-mi div {
+    gap: 0.5rem;
+  }
+
+  #sobre-mi h1 {
+    font-size: 30px;
+  }
+
+  #sobre-mi p {
+    text-align: start;
+  }
+
+  .jobs-container {
+    margin-left: 1rem;
+  }
+
+  .education-container {
+    padding: 0;
   }
 }
