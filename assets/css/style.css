@@ -185,6 +185,46 @@ p {
   transform: rotate(30deg);
 }
 
+/* Portafolio */
+
+.card {
+  border-color: var(--cv-secondary);
+}
+
+.card-title {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.task-img {
+  height: 300px;
+  object-fit: cover;
+  object-position: top left;
+}
+
+div.mask {
+  position: relative;
+}
+
+div.mask::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.592);
+  border-radius: 3px 3px 0 0;
+  bottom: 0;
+}
+
+span.tag {
+  background-color: var(--cv-primary);
+  color: var(--cv-white);
+  font-size: 14px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
 @media only screen and (min-width: 992px) {
   .navbar {
     padding: 0;
@@ -225,5 +265,13 @@ p {
 
   .education-container {
     padding: 0;
+  }
+
+  .task-img {
+    height: 350px;
+  }
+
+  div.mask::after {
+    height: 350px;
   }
 }
