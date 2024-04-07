@@ -54,7 +54,9 @@ p {
 }
 
 .navbar {
-  background-color: var(--cv-white);
+  background-color: var(--cv-black);
+  display: flex;
+  transition: all .5s;
 }
 
 .navbar .navbar-nav .nav-item {
