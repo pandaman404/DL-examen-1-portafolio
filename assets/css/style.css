@@ -49,7 +49,7 @@ p {
   color: var(--cv-primary);
 }
 
-.cv-color {
+.cv-color, .hamburguesa {
   color: var(--cv-primary);
 }
 
